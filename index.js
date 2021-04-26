@@ -44,6 +44,6 @@ io.on('connection', function(socket) {
     
 });
 
-const listener = http.listen(3000, function() {
+const listener = http.listen(process.env.PORT, function() {
     console.log("Your app is listening on port " + listener.address().port);
 });
